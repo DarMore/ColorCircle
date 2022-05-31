@@ -1,0 +1,110 @@
+body {
+    width: 100%;
+    display: flex;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.colcir {
+    margin: 0 auto;
+}
+
+.circle {
+    width: 380px;
+    height: 380px;
+    position: relative;
+}
+
+.lilcir{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 120px;
+    left: 120px;
+    z-index: 0;
+    background-color: black;
+}
+
+.cir1, .cir2, .cir3, .cir4{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+}
+
+.cir1{
+    top: 0;
+    left: 0;
+    background-image: url(/img/circle4.png);
+}
+.cir2{
+    top: 0;
+    left: 190px;
+    background-image: url(/img/circle1.png);
+}
+
+.cir3{
+    top: 190px;
+    left: 0;
+    background-image: url(/img/circle3.png);
+}
+
+.cir4{
+    top: 190px;
+    left: 190px;
+    background-image: url(/img/circle2.png);
+}
+
+.circen{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    top: 80px;
+    left: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#movebtn{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.colors {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+
+.colors > div > div {
+    width: 150px;
+    height: 150px;
+}
+
+.maincol{
+    width: 150px;
+    height: 300px;
+    background-color: rgb(53, 10, 74);
+}
+
+.lighter {
+    background-color: rgb(110, 53, 138);
+}
+
+.morelighter {
+    background-color: rgb(157, 55, 207);
+}
+
+.darker {
+    background-color: rgb(28, 14, 35);
+}
+
+.moredarker{
+    background-color: rgb(109, 4, 161);
+}
