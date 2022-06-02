@@ -17,26 +17,10 @@ choose_color.addEventListener('input', () =>{
     moredarker.style.backgroundColor = shadeColor1(choose_color.value, -40);
 });
 
-function shadeColor1(color, percent) {	// deprecated. See below.
+function shadeColor1(color, percent) {
     var num = parseInt(color.slice(1),16), amt = Math.round(2.55 * percent), R = (num >> 16) + amt, G = (num >> 8 & 0x00FF) + amt, B = (num & 0x0000FF) + amt;
     return "#" + (0x1000000 + (R<255?R<1?0:R:255)*0x10000 + (G<255?G<1?0:G:255)*0x100 + (B<255?B<1?0:B:255)).toString(16).slice(1);
 }
-
-// movebtn.onmousedown = function(e) {
-//     let shiftX = e.clientX - movebtn.getBoundingClientRect().left;
-//     let shiftY = e.clientY - movebtn.getBoundingClientRect().top;
-//     movebtn.style.left = e.pageX - shiftX + 'px';
-//     movebtn.style.top = e.pageY - shiftY + 'px';
-
-//   };
-  
-//   movebtn.addEventListener('mousedown', e => {
-//       document.addEventListener('mousemove', listener);
-//   });
-  
-//   movebtn.addEventListener('mouseup', e => {
-//       document.removeEventListener('mousemove', listener);
-//   });
 
 movebtn.onmousedown = function(event) {
 
